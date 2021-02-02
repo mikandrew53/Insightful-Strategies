@@ -1,0 +1,228 @@
+@media(max-width: 1400px) {
+    .about {
+        .picture{
+            img{
+                width: 400px;
+                max-height: 300px;
+                height: 250px;
+            }
+        }
+    }       
+}
+
+// WIDTH
+@media(max-width: 1290px){
+    .about {
+        .about-section {
+            min-height: 530px;
+        }
+        .picture{
+            img{
+                width: 350px;
+                max-height: 300px;
+                height: 200px;
+            }
+        }
+    }      
+}
+
+
+@media(max-width:1170px){
+    .about {
+        .about-section{min-height: 430px;}
+        .picture{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 300px;
+                max-height: 300px;
+            }
+        }
+    }
+
+    .contact {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+    
+    
+}
+
+@media(max-width: 999px){
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-section {
+            width: 80%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        .picture{
+            margin-bottom: 30px;
+            img{
+                width: 100%;
+                max-height: 350px;
+                height: auto;
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+            
+        }   
+    }
+
+    .contact {
+        padding: 80px 30px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 50px 0;
+        text-align: center;
+        h2{
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        h1{ 
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 850px){
+    .landing {
+        .landing-top {
+            .top {
+                justify-content: center;
+                text-align: center;
+                .btn{
+                    display: none;
+                }
+            }
+            .middle{
+                text-align: center;
+            }
+            .bottom {
+                .btn {
+                    display: block;
+                }
+            }   
+        }
+    }
+    .areas-of-practice{
+        .area-of-practice{
+            grid-template-columns: 1fr;
+            .title {
+                padding: 70px 0;
+            }
+        }
+    }
+
+    .meet-michael {
+        padding: 30px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        .contact-message {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-section {
+            width: 90%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        .picture{
+            margin-bottom: 30px;
+            img{
+                height: auto;
+                max-height: 300px;
+                width: 100%;
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+        }   
+    }   
+
+    .areas-of-practice {
+        padding: 30px 50px;
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 570px){
+    .landing{
+        .landing-top {
+            .btn {
+                width: 140px;
+                padding: 15px 10px;
+                top: 60vh;
+                left: 50vw;
+            }
+            .middle {
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+    }
+
+    .about {
+        .about-section {
+            .picture{
+                img {
+                    max-height: 200px;
+                }
+            }
+        }
+    }
+
+    .areas-of-practice {
+        .area-of-practice {
+            .title {
+                padding: 40px;
+            }
+        }
+    }
+
+    .meet-michael {
+        padding: 30px 20px;
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+@media(max-height: 500px) {
+    .landing{
+        .landing-top {
+            height: 100vh;
+        }
+    }
+}
+

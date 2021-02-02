@@ -1,0 +1,91 @@
+<div class="contact"
+    inViewport
+    [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onAppear($event, 0)"
+>
+    <div class="contact-message">
+        <h3 [ngClass]="{'hidden': true, 'showSlow': showElement[0]}" >Get in touch.</h3>
+        <p style="margin-bottom: 30px;" [ngClass]="{'hidden': true, 'showSlow': showElement[0]}"><span>Starting a new project?</span> Let us provide you with deeply insightful intelligence, strategies and tactics to navigate complex political contexts, and knowledge of complex government structures to assist in your success.</p>
+        <p style="margin-bottom: 30px;" [ngClass]="{'hidden': true, 'showSlow': showElement[0]}"><span>Do you require additional services?</span> We have strategic alliances with a number of firms that will surely meet your needs.</p>
+        <p [ngClass]="{'hidden': true, 'showSlow': showElement[0]}">The way you begin your journey will make all the difference.</p>
+    </div>
+    <form action="" class="form" (submit)="submit($event)">
+        <div class="name form-input">
+            <p>Name*</p>
+            <div class="inputs">
+                <div class="first-name">
+                    <input 
+                    type="text" 
+                    [ngClass]="{'input': true, 'error': ((!inputs[0].valid && inputs[0].entered && inputs[0].inputEntered) || (sent && !inputs[0].valid))}"
+                    (keyup)="onKeyPress($event, 0)"
+                    (focusout)="onFocusOut($event, 0)"
+                    id="1"
+                    name="firstName"
+                    #firstName>
+                    <p>First Name*</p>
+                </div>
+                
+                <div class="last-name">
+                    <input 
+                    type="text" 
+                    [ngClass]="{'input': true, 'error': ((!inputs[1].valid && inputs[1].entered && inputs[1].inputEntered) || (sent && !inputs[1].valid))}" 
+                    (keyup)="onKeyPress($event, 1)" 
+                    (focusout)="onFocusOut($event, 1)"
+                    #lastName>
+                    <p>Last Name*</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="email form-input">
+            <p>Email*</p>
+            <input 
+            name="email" 
+            [ngClass]="{'input': true, 'error': ((!inputs[2].valid && inputs[2].entered && inputs[2].inputEntered) || (sent && !inputs[2].valid))}"
+            (keyup)="onKeyPress($event, 2)" 
+            (focusout)="onFocusOut($event, 2)"
+            #email>
+        </div>
+        <div class="orginization form-input">
+            <p>Orginization*</p>
+            <input 
+            type="text" 
+            [ngClass]="{'input': true, 'error': ((!inputs[3].valid && inputs[3].entered && inputs[3].inputEntered) || (sent && !inputs[3].valid))}"  
+            (keyup)="onKeyPress($event, 3)" 
+            (focusout)="onFocusOut($event, 3)"
+            #orginization>
+        </div>
+        <div class="message form-input">
+            <p>Message*</p>
+            <textarea 
+            cols="30" rows="40" 
+            [ngClass]="{'input': true, 'error': ((!inputs[4].valid && inputs[4].entered && inputs[4].inputEntered) || (sent && !inputs[0].valid)), 'area': true}" 
+            (keyup)="onKeyPress($event, 4)"
+            (focusout)="onFocusOut($event, 4)" 
+            #message></textarea>
+        </div>
+        <div class="phone-section form-input">
+            <p>Phone</p>
+            <input 
+            type=”tel”
+            [ngClass]="{'input': true, 'error': ((!inputs[5].valid && inputs[5].entered && inputs[5].inputEntered) || (sent && !inputs[5].valid)), 'phone': true}" 
+            placeholder="(###) - ### - ####" 
+            (input)="onKeyPress($event, 5)" 
+            (focusout)="onFocusOut($event, 5)"
+            #phone>
+        </div>
+        <button 
+        class="btn" 
+        type="submit" 
+        #send>
+        Send</button>
+    </form>
+</div>
+<div class="contact-info"
+    inViewport
+    [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onAppear($event, 1)"
+>
+    <h1 [ngClass]="{'hidden': true, 'showSlow': showElement[1]}">Insightful Strategies</h1>
+    <h2 [ngClass]="{'hidden': true, 'showSlow': showElement[1]}">michael@insightfulstrategies.ca</h2>
+</div>

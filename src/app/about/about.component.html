@@ -1,0 +1,46 @@
+<div class="section about">
+    <div class="about-section">
+        <div class="picture">
+            <img src="./../../assets/chess.jpg" alt=""  [ngClass]="{'hidden': true, 'showFast': show}">
+        </div>
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'showFast': show}">Who We Are.</h4>
+        </div>
+        <div class="description"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onPicture($event)"
+        >
+            <p [ngClass]="{'hidden': true, 'showFast': show}">We provide bespoke services in government relations, stakeholder engagement, strategic communications and, insight and research.</p>
+            <p [ngClass]="{'hidden': true, 'showFast': show}">We provide deep insights, analysis, and implications behind government policy and politics on society, businesses and organisations across various sectors.</p>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="picture">
+            <img src="./../../assets/philosophy.jpg" alt="" [ngClass]="{'hidden': true, 'showFast': show}">
+        </div>
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'showFast': show}">Our Philosophy.</h4>
+        </div>
+        <div class="description">
+            <p [ngClass]="{'hidden': true, 'showFast': show}">Trustworthy.</p>
+            <p [ngClass]="{'hidden': true, 'showFast': show}">Ethical.</p>
+            <p [ngClass]="{'hidden': true, 'showFast': show}">Effective.</p>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="picture">
+            <img src="./../../assets/values.jpg" alt="" [ngClass]="{'hidden': true, 'showFast': show}">
+        </div>
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'showFast': show}">Our Values.</h4>
+        </div>
+        <div class="description"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onPicture($event)"
+        >
+            <p [ngClass]="{'hidden': true, 'showFast': show}">We strongly believe in community. When needed, we provide services free of charge or at a reduced cost - no questions asked. We prioritise working with organisations that are working towards building a better world. It’s that simple.</p>
+        </div>
+    </div>
+</div>

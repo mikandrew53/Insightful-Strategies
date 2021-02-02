@@ -1,0 +1,61 @@
+<div class=" areas-of-practice">
+    <h3
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onShowHeader($event)"
+        [ngClass]="{'hidden': true, 'show': showHeader}"
+    >Areas of Practice </h3>
+    <div class="area-of-practice">
+        <div class="title"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onAppear($event, 0)"
+        >
+            <h4 [ngClass]="{'hidden': true, 'show': showAreaOfPractice[0]}">Government Relations</h4>
+        </div>
+        <div class="description">
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[0]}">What does it take to get the attention of government officials? Every context has its unique standards of regulating access to information and it is increasingly important to be aware of the formal and informal channels of influence.</p>
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[0]}">We support our clients by helping them navigate government decision-making processes - presenting their case with compelling insight and, in many ways, elevating the discourse to higher standards, creating win-win scenarios.</p>
+        </div>
+    </div>
+    <div class="area-of-practice"
+    inViewport
+    [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onAppear($event, 1)"
+    >
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'show': showAreaOfPractice[1]}">Stakeholder Engagement</h4>
+        </div>
+        <div class="description">
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[1]}">It’s about knowing where your stakeholders stand and how to strategically navigate unique contexts in which you find yourselves.</p>
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[1]}">We will help you build an effective stakeholder engagement plan which includes assessing projects, identifying stakeholders, defining objectives, building your engagement plan, and much more.</p>
+        </div>
+    </div>
+    <div class="area-of-practice"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onAppear($event, 2)"
+    >
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'show': showAreaOfPractice[2]}">Strategic Communications</h4>
+        </div>
+        <div class="description">
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[2]}">Communications is all about precision in your message. It’s that simple.</p>
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[2]}">Developing a thoughtful strategy, based on critical insight, will be a fundamental requirement if you hope to influence your audience.</p>
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[2]}">How and where you deliver your story can make all the difference. </p>
+        </div>
+    </div>
+    <div class="area-of-practice"
+    inViewport
+    [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onAppear($event, 3)"
+    >
+        <div class="title">
+            <h4 [ngClass]="{'hidden': true, 'show': showAreaOfPractice[3]}">Insight and Research</h4>
+        </div>
+        <div class="description">
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[3]}">Navigating complex political, regulatory, and legislative environments should not be burdensome.</p>
+            <p [ngClass]="{'hidden': true, 'show': showAreaOfPractice[3]}">We design and execute comprehensive research activities that will provide deep insight for your most critical decisions.</p>
+        </div>
+    </div>
+</div>
